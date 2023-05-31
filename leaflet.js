@@ -20,11 +20,4 @@ var circle = L.circle([7.376736, 3.939786], {
 
 // L.control.locate().addTo(map);
 
-var lc = L.control
-  .locate({
-    position: "topleft",
-    strings: {
-      title: "Show me where I am, yo!",
-    },
-  })
-  .addTo(map);
+L.control.locate().addTo(map);
