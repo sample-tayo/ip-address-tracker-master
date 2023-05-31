@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h4>IP Address Tracker</h4>
+      <form class="ipForm">
+        <!-- <label for="ipAddress">IP Address:</label> -->
+        <div class="input-container">
+          <input
+            type="text"
+            id="ipAddress"
+            name="ipAddress"
+            value=""
+            placeholder="Search for any IP address or domain"
+            required
+          />
+          <button type="submit">
+            <img src="/images/icon-arrow.svg" alt="" />
+          </button>
+        </div>
+      </form>
+      <ul>
+        <li>
+          <span class="title">IP ADDRESS</span>
+          <span class="ipAddressResult">193.212.174.101</span>
+        </li>
+        <li>
+          <span class="title">LOCATION</span>
+          <span class="updatelocation">193.212.174.101</span>
+        </li>
+        <li>
+          <span class="title">TIMEZONE</span>
+          <span class="updateTimezone">193.212.174.101</span>
+        </li>
+        <li>
+          <span class="title">ISP</span>
+          <span class="ispResult">193.212.174.101</span>
+        </li>
+      </ul>
+    </section>
+    <div id="map"></div>
+    <!-- add offset value dynamically using the API -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Makinde Bolaji</a>.
+    </div>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
+    <script src="/leaflet.js"></script>
+  </body>
+</html>
