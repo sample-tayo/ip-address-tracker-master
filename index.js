@@ -23,6 +23,9 @@ submitBtn.addEventListener("click", function (event) {
         displayAdditonalLocation(data.location),
         console.log(data);
     });
+  // .catch((error) => {
+  //   console.error("Error:", error);
+  // });
 
   const displayLocation = (location) => {
     const { ip, isp } = location;
